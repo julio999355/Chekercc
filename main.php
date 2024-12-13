@@ -32,7 +32,7 @@ include __DIR__."/modules/checker/sm.php";
 if(strpos($message, "/start") === 0){
 if(!isBanned($userId) && !isMuted($userId)){
 
-  if($userId == $config['adminID']){
+  if($userId == $config['@kay8181']){
     $messagesec = "<b>Type /admin to know admin commands</b>";
   }
 
@@ -48,7 +48,7 @@ $messagesec",
 	'reply_to_message_id'=> $message_id,
     'reply_markup'=>json_encode(['inline_keyboard' => [
         [
-          ['text' => "💠 Created By 💠", 'url' => "t.me/ninjanaveen"]
+          ['text' => "💠 Created By 💠", 'url' => "t.me/kay8181"]
         ],
         [
           ['text' => "💎 Source Code 💎", 'url' => "t.me/IndianBotsChat"]
@@ -102,7 +102,7 @@ if(strpos($message, "/cmds") === 0 || strpos($message, "!cmds") === 0){
 <b>/apikey sk_live_xxx - Add SK Key for /schk gate</b>
 <b>/myapikey | !myapikey - View the added SK Key for /schk gate</b>
 
-<b>ϟ Join <a href='t.me/IndianBots'>IndianBots</a></b>",
+
     'parse_mode'=>'html',
     'disable_web_page_preview'=>true,
     'reply_markup'=>json_encode(['inline_keyboard'=>[
@@ -124,7 +124,7 @@ if(strpos($message, "/cmds") === 0 || strpos($message, "!cmds") === 0){
 <b>/bin | !bin</b> - Bin Lookup
 <b>/iban | !iban</b> - IBAN Checker
   
-  <b>ϟ Join <a href='t.me/IndianBots'>IndianBots</a></b>",
+  
     'parse_mode'=>'html',
     'disable_web_page_preview'=>true,
     'reply_markup'=>json_encode(['inline_keyboard'=>[
